@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/FlowerShop
+    username: postgres
+    password: password
+    initialization-mode: always
+    initialize: true
+
+  jpa:
+    hibernate:
+      show-sql: true
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
