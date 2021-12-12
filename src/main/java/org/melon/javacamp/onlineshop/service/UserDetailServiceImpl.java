@@ -1,5 +1,6 @@
 package org.melon.javacamp.onlineshop.service;
 
+import org.melon.javacamp.onlineshop.dao.AccountDAO;
 import org.melon.javacamp.onlineshop.entity.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,5 +1,8 @@
 package org.melon.javacamp.onlineshop.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CartInfo {
     private int orderNum;
 

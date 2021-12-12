@@ -1,8 +1,8 @@
-package org.melon.javacamp.onlineshop.model;
+package org.melon.javacamp.onlineshop.form;
 
-import org.melon.javacamp.onlineshop.form.CustomerForm;
+import org.melon.javacamp.onlineshop.model.CustomerInfo;
 
-public class CustomerInfo {
+public class CustomerForm {
     private String name;
     private String address;
     private String email;
@@ -10,16 +10,17 @@ public class CustomerInfo {
 
     private boolean valid;
 
-    public CustomerInfo() {
+    public CustomerForm() {
 
     }
 
-    public CustomerInfo(CustomerForm customerForm) {
-        this.name = customerForm.getName();
-        this.address = customerForm.getAddress();
-        this.email = customerForm.getEmail();
-        this.phone = customerForm.getPhone();
-        this.valid = customerForm.isValid();
+    public CustomerForm(CustomerInfo customerInfo) {
+        if (customerInfo != null) {
+            this.name = customerInfo.getName();
+            this.address = customerInfo.getAddress();
+            this.email = customerInfo.getEmail();
+            this.phone = customerInfo.getPhone();
+        }
     }
 
     public String getName() {
